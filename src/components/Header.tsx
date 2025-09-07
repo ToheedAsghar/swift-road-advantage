@@ -46,7 +46,11 @@ export const Header = () => {
               <Phone className="h-4 w-4" />
               <span>(555) 123-4567</span>
             </div>
-            <Button variant="default" className="bg-primary hover:bg-primary-dark">
+            <Button 
+              variant="default" 
+              className="bg-primary hover:bg-primary-dark"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Get Started
             </Button>
           </div>
@@ -83,9 +87,15 @@ export const Header = () => {
                 <Phone className="h-4 w-4" />
                 <span>(555) 123-4567</span>
               </div>
-              <Button className="w-full bg-primary hover:bg-primary-dark">
-                Get Started
-              </Button>
+               <Button 
+                 className="w-full bg-primary hover:bg-primary-dark"
+                 onClick={() => {
+                   setIsMenuOpen(false);
+                   document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                 }}
+               >
+                 Get Started
+               </Button>
             </div>
           </div>
         </div>

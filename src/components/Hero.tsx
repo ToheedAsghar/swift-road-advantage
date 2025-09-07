@@ -34,6 +34,7 @@ export const Hero = () => {
               size="lg" 
               className="btn-hero-primary group"
               aria-label="Get loads for your truck"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Get Loads Now
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -44,6 +45,7 @@ export const Hero = () => {
               variant="outline" 
               className="btn-hero-secondary"
               aria-label="Speak with dispatch team"
+              onClick={() => window.open('tel:5551234567', '_self')}
             >
               Talk to Dispatch
             </Button>

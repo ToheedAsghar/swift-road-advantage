@@ -120,6 +120,7 @@ export const Pricing = () => {
                     : 'bg-secondary hover:bg-secondary/80 text-secondary-foreground'
                 }`}
                 size="lg"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Get Started
               </Button>
