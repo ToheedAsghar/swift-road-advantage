@@ -1,73 +1,183 @@
-# Welcome to your Lovable project
+# Swift Trucking LLC - Professional Dispatch Website
 
-## Project info
+A production-ready React website for Swift Trucking LLC, a professional truck logistics and dispatch company. Built with modern web technologies and optimized for performance, accessibility, and SEO.
 
-**URL**: https://lovable.dev/projects/ee0d604b-9e4f-43e3-8e85-dc94f06e8ccc
+## 🚚 About Swift Trucking LLC
 
-## How can I edit this code?
+Swift Trucking LLC provides professional dispatch services for owner-operators and small fleets across all 48 states. We specialize in finding high-paying freight opportunities while handling all the paperwork, negotiations, and compliance requirements.
 
-There are several ways of editing your application.
+### Services Offered
+- **Freight Dispatch** - Complete load booking and dispatch services
+- **Equipment Types** - Dry van, reefer, flatbed, stepdeck, conestoga, box trucks
+- **24/7 Support** - Round-the-clock dispatch and emergency assistance
+- **Industry Coverage** - Manufacturing, retail, construction, food & beverage, and more
 
-**Use Lovable**
+## 🛠 Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ee0d604b-9e4f-43e3-8e85-dc94f06e8ccc) and start prompting.
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **Build Tool**: Vite
+- **UI Components**: Shadcn/ui
+- **Icons**: Lucide React
+- **Routing**: React Router DOM
+- **Forms**: React Hook Form + Zod validation
+- **Animations**: Tailwind CSS + custom animations
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Quick Start
 
-**Use your preferred IDE**
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn package manager
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd swift-trucking-website
+   ```
 
-Follow these steps:
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. **Start development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. **Open in browser**
+   Navigate to `http://localhost:8080`
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Build for Production
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+npm run build
+# or
+yarn build
 ```
 
-**Edit a file directly in GitHub**
+## 🎨 Brand Guidelines
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Color Palette
+- **Primary**: `#004990` (Midnight Blue) - Headers, buttons, primary elements
+- **Silver**: `#A8A9AD` (Metallic Silver) - Borders, secondary text, dividers  
+- **Gainsboro**: `#DCDCDC` (Light Gray) - Backgrounds, cards, subtle surfaces
 
-**Use GitHub Codespaces**
+### Typography
+- **Font Family**: Inter (Google Fonts)
+- **Headings**: Bold weight, semantic HTML structure
+- **Body**: Normal weight, optimized line height for readability
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Usage Rules
+- Use Primary color for call-to-action elements and headers
+- Apply Silver for subtle borders and secondary information
+- Utilize Gainsboro for background surfaces and cards
+- Maintain 4.5:1 contrast ratio for WCAG AA compliance
 
-## What technologies are used for this project?
+## 📱 Features
 
-This project is built with:
+### Core Sections
+1. **Hero** - Value proposition with strong CTAs and statistics
+2. **Services** - Six main dispatch services with detailed descriptions
+3. **Why Choose Us** - Key differentiators and company benefits
+4. **Industries** - Supported industries and equipment types
+5. **Process** - 5-step workflow from onboarding to payment
+6. **Testimonials** - Client success stories with revenue metrics
+7. **Pricing** - Transparent commission structure (5-7%)
+8. **FAQ** - Common questions about dispatch services
+9. **Contact** - Lead capture form with validation
+10. **Footer** - Links, compliance info, emergency contact
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Technical Features
+- **Responsive Design** - Mobile-first approach with breakpoint optimization
+- **Accessibility** - WCAG 2.1 AA compliant with keyboard navigation
+- **SEO Optimized** - Meta tags, structured data, semantic HTML
+- **Performance** - Lazy loading, optimized images, efficient code splitting
+- **Smooth Scrolling** - Enhanced navigation experience
+- **Form Validation** - Client-side validation with error handling
 
-## How can I deploy this project?
+## 🔧 Customization
 
-Simply open [Lovable](https://lovable.dev/projects/ee0d604b-9e4f-43e3-8e85-dc94f06e8ccc) and click on Share -> Publish.
+### Updating Brand Assets
 
-## Can I connect a custom domain to my Lovable project?
+#### Logo
+Replace the logo placeholder in `src/components/Header.tsx`:
+```tsx
+// Update the logo section
+<div className="h-10 w-10 bg-primary rounded-lg flex items-center justify-center">
+  <img src="/your-logo.png" alt="Swift Trucking LLC" className="h-8 w-8" />
+</div>
+```
 
-Yes, you can!
+#### Hero Image
+Replace `src/assets/hero-trucks.jpg` with your own trucking imagery. Recommended dimensions: 1920x1080px.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+#### Contact Information
+Update contact details in:
+- `src/components/Header.tsx` - Phone number in header
+- `src/components/ContactForm.tsx` - Contact cards and emergency info
+- `src/components/Footer.tsx` - Footer contact section
+- `index.html` - Schema.org structured data
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Color Customization
+
+Update brand colors in `src/index.css`:
+```css
+:root {
+  --brand-primary: [your-primary-hsl];
+  --brand-silver: [your-silver-hsl]; 
+  --brand-gainsboro: [your-surface-hsl];
+}
+```
+
+### Content Updates
+
+#### Services
+Modify services in `src/components/Services.tsx` to match your specific offerings.
+
+#### Testimonials  
+Update client testimonials in `src/components/Testimonials.tsx` with real customer feedback.
+
+#### Pricing Plans
+Adjust commission percentages and features in `src/components/Pricing.tsx`.
+
+## 🌐 Deployment
+
+### Environment Setup
+1. Update contact information throughout the codebase
+2. Replace placeholder images with actual brand assets
+3. Update meta tags and structured data in `index.html`
+4. Configure form submission endpoint in `ContactForm.tsx`
+
+### Performance Targets
+- **Lighthouse Performance**: ≥90
+- **Lighthouse Accessibility**: ≥95  
+- **Lighthouse SEO**: ≥90
+- **First Contentful Paint**: <2s
+- **Largest Contentful Paint**: <2.5s
+
+## 📞 Contact & Support
+
+**Swift Trucking LLC**
+- **Phone**: (555) 123-4567 (24/7 Dispatch)
+- **Email**: dispatch@swifttrucking.com
+- **Address**: 123 Logistics Way, Dallas, TX 75201
+
+For technical support with this website, please refer to the development team or hosting provider.
+
+## 📄 License & Compliance
+
+- Website built for Swift Trucking LLC
+- All images should be replaced with properly licensed content
+- Ensure DOT and FMCSA compliance information is accurate
+- Update legal pages (Privacy Policy, Terms of Service) before going live
+
+---
+
+**Note**: This is a production-ready template. Before launching, ensure all placeholder content is replaced with actual company information, images are properly licensed, and contact forms are configured with working endpoints.

@@ -22,6 +22,8 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          light: "hsl(var(--brand-primary-light))",
+          dark: "hsl(var(--brand-primary-dark))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -47,16 +49,23 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        brand: {
+          primary: "hsl(var(--brand-primary))",
+          silver: "hsl(var(--brand-silver))",
+          gainsboro: "hsl(var(--brand-gainsboro))",
         },
+      },
+      fontFamily: {
+        heading: "var(--font-heading)",
+        body: "var(--font-body)",
+      },
+      backgroundImage: {
+        'hero-gradient': 'var(--gradient-hero)',
+        'section-gradient': 'var(--gradient-section)',
+      },
+      boxShadow: {
+        'card': 'var(--shadow-card)',
+        'hero': 'var(--shadow-hero)',
       },
       borderRadius: {
         lg: "var(--radius)",
